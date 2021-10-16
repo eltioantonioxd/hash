@@ -143,3 +143,14 @@ def switch():
         print('MD5: ', hash_object.hexdigest(), "     Entropía:", entropia(hash_object.hexdigest()))
 switch()
 ```
+##Comparativa Hash Algorithm
+
+
+###Ditribución de rendimiento
+
+##Lista de tareas
+
+- [x] #Hito I
+- [x] #Hito II
+- [ ] #Hito III
+- [ ] #Hito IV
