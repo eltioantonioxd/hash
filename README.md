@@ -6,12 +6,12 @@ Comparativa de algoritmos de hash
 ```python
 import string
 import math
-import hashlib
+import hashlib #se importa esta librería para efectuar un análisis en relación a los algoritmos de hash tradicionales
 
-base = str(string.ascii_letters + string.digits + string.punctuation)
-base2 = str(string.punctuation)
-
-def hashR(hash, password): 
+base = str(string.ascii_letters + string.digits + string.punctuation) #base 94 generada (es ASCII - espacios en blancos)
+base2 = str(string.punctuation) #Variable auxiliar para generar caracteres especiales
+#Función que permite corroborar si el hash obtenido es igual a 25, en caso contrario se corta el hash o se emplea recursividad si el resumen es menor
+def hashR(hash, password):  
     neWord = hash
     if(len(hash) > 25):
         neWord = hash[:25]
@@ -23,16 +23,16 @@ def hashR(hash, password):
     else:
         return neWord
 
-def resumen(password):
+def resumen(password): #Función de hash creada
     ultimo = len(password) - 1
-    Funcion1 = password[0] + password[ultimo]
-    Funcion2 = str(F2(password))
+    Funcion1 = password[0] + password[ultimo] #Funcion 1 que toma el primer y ultimo caracter del string 
+    Funcion2 = str(F2(password)) 
     Funcion3 = str(F3(password))
     Funcion4 = str(F4(password))
     Funcion5 = str(int(math.sqrt(F3(password))))
-    return (Funcion2 + Funcion3 + Funcion4 + Funcion1 + Funcion5)
+    return (Funcion2 + Funcion3 + Funcion4 + Funcion1 + Funcion5) #Funciones creadas para emplear un hash en particular
 
-def F2(password):
+def F2(password): #F2 que retornara una serie de caracteres en relación al largo del hash empleado, además de verificar si algún caracter de la password esta en el diccionario
     match = ""
     cont=0
     if(len(password) >= 4):
@@ -47,7 +47,7 @@ def F2(password):
         return match
     
 
-def F3(password):
+def F3(password): #F3 realiza una sumatoria de números pares e impares para posteriormente multiplar los valores obtenidos
     pares = 0
     impares = 0
     for i in range(len(password)):
@@ -57,10 +57,10 @@ def F3(password):
             impares += base.find(password[i])
     return pares * impares 
 
-def F4(password):
+def F4(password): #F4 ofusca la contraseña empleada por medio de la varianle auxiliar base2 que contiene caracteres especiales
     ofuscar = ""
     cont = 0
-    if(len(password)%2 == 0 and password.isalnum() == True):
+    if(len(password)%2 == 0 and password.isalnum() == True): #Dependiendo del password empleado se retornarán valores distintos
         for i in range(0, len(base2), 3):
             ofuscar += base2[i] + base[i]
             cont +=1
@@ -79,7 +79,7 @@ def F4(password):
             if(cont >= 4):
                 return ofuscar
 
-def lectura(fichero):
+def lectura(fichero): #Función que permite leer el Fichero ingresado. Cabe recalcar que dicho fichero debe estar en la misma ruta que el Algoritmo
     with open("./"+fichero, "r", encoding='utf8') as file:
         cont = 0
         for line in file:
@@ -88,7 +88,7 @@ def lectura(fichero):
             cont += 1
             if(cont == 50):
                 return file.close()
-def entropia(password):
+def entropia(password): #Función que retorna la entropía del hash (Por el momento los hash sha1, sha256 y md5 se les asumio la misma base que el algoritmo creado)
     H = len(password) * math.log2(len(base))
     return H
 
