@@ -103,6 +103,7 @@ def entropia(password): #Función que retorna la entropía del hash (Por el mome
     H = len(password) * math.log2(len(base))
     return H
 
+#Función tipo switch case que tomá una opción ingresada por el usuario y devuelve la acción que selecciono
 def switch():
     print('Elige el algoritmo a usar o la acción a tomar:')
     print('1.- Nombre del fichero y su extensión')
