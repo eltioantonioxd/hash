@@ -10,7 +10,9 @@ cumplir una seríe de restricciones las cuales son:
     - una que procese el texto de entrada y calcule el Hash de estas entradas (sea por STDIN, cómo mediante un archivo)
     - Y otra opción que sólo calcule la entropía del texto de entrada. En este último caso, debe arrojar mediante STDOUT que entropía posee cada texto de entrada (El formato       de la salida a STDOUT, debe mostrar tanto el texto analizado, cómo la entropía calculada separada por un delimitador que permita diferenciar los diferentes campos).
 
-
+## Algoritmo de hash creado
+A continuación, se presenta el algoritmo de hash generado para la experiencia. 
+*Nota: Para la realización de pruebas de rendimiento se limito el archivo **Rockyou.txt** a 50 líneas*
 ```python
 import string
 import math
