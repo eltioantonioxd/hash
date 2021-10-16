@@ -150,11 +150,8 @@ switch()
 
 ## Lista de tareas
 
-- [x] \(Hito I)
-- [x] \Hito II
-- [ ] \Hito III
-- [ ] \Hito IV
+- [x] Hito I
+- [x] Hito II
+- [ ] Hito III
+- [ ] Hito IV
 
-- [x] #739
-- [ ] https://github.com/octo-org/octo-repo/issues/740
-- [ ] Add delight to the experience when all tasks are complete :tada:
