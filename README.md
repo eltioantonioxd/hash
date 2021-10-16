@@ -150,7 +150,7 @@ switch()
 
 ## Lista de tareas
 
-- [x] \Hito I
+- [x] \(Hito I)
 - [x] \Hito II
 - [ ] \Hito III
 - [ ] \Hito IV
