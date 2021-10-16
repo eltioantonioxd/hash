@@ -1,6 +1,14 @@
 # Actividad 4 - Hash
 
-Comparativa de algoritmos de hash
+La presente actividad consiste en generar un algoritmo de hash a fin de resguardar los sitios web vulnerables en los sitios chilenos. En este sentido, dicho algoritmo debe
+cumplir una seríe de restricciones las cuales son:
+- El número de caracteres final del texto procesado, debe ser fijo y no menor de 25 caracteres. Este número no debe variar, aunque el texto de entrada sea más largo.
+- Se requiere que el programa pueda recibir como entrada, tanto un string o texto mediante STDIN, cómo también mediante archivos con múltiples entradas separadas por el salto de línea.
+- Cualquier ligero cambio al texto de entrada, debe cambiar el resultado final del algoritmo.
+- El procesamiento del texto de entrada, debe  ser rápido, no debe tomar mucho tiempo, independiente de la cantidad de texto de entrada. **Se recomienda el uso de operaciones matemáticas al texto de entrada, a fin de optimizar la velocidad de procesamiento del texto de entrada**
+- Adicionalmente se requiere que posea a lo menos dos opciones:
+    - una que procese el texto de entrada y calcule el Hash de estas entradas (sea por STDIN, cómo mediante un archivo)
+    - Y otra opción que sólo calcule la entropía del texto de entrada. En este último caso, debe arrojar mediante STDOUT que entropía posee cada texto de entrada (El formato       de la salida a STDOUT, debe mostrar tanto el texto analizado, cómo la entropía calculada separada por un delimitador que permita diferenciar los diferentes campos).
 
 
 ```python
