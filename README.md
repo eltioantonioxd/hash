@@ -13,7 +13,7 @@ cumplir una seríe de restricciones las cuales son:
 ## Algoritmo de hash creado
 A continuación, se presenta el algoritmo de hash generado para la experiencia. 
 
-*Nota: Para la realización de pruebas de rendimiento se limito el archivo **Rockyou.txt** a 50 líneas*
+*Nota: Para la realización de pruebas de rendimiento se limito el archivo **Rockyou.txt** a 50 líneas, asimismo para incorporar ficheros en la lectura este se debe encontrar dentro del mismo directorio*
 ```python
 import string
 import math
