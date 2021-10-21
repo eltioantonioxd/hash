@@ -219,8 +219,8 @@ if(switch() == False):
 
 ## Comparativa de los hash
 
-| Algoritmo de hash | Base utilizada | Entropia | Velocidad 1 entrada | 
-| ------------- | ------------- |  ------------- | ------------- | 
+| Algoritmo de hash | Base utilizada | Entropia | Velocidad 1 entrada | Velocidad 10 entrada | Velocidad 20 entrada | Velocidad 50 entrada |
+| ------------- | ------------- |  ------------- | ------------- |  ------------- | ------------- |   ------------- |
 | Algoritmo creado  | 94  |  163.86472129194095  | 0.001008749008178711 | 
 | SHA1  | 16 |  160  | 0.0009982585906982422 | 
 | SHA256  | 16  |   256  | 0.0  | 
