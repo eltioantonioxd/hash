@@ -142,6 +142,7 @@ def switch():
         hash_object = hashlib.md5(str(string_to_hash).encode('utf-8'))
         print('MD5: ', hash_object.hexdigest(), "     Entropía:", entropia(hash_object.hexdigest()))
 switch()
+
 ```
 ## Comparativa Hash Algorithm
 
