@@ -219,10 +219,12 @@ if(switch() == False):
 
 ## Comparativa de los hash
 
-| Primer encabezado | Segundo encabezado |
-| ------------- | ------------- |
-| Contenido de la celda  | Contenido de la celda  |
-| Contenido de la celda  | Contenido de la celda  |
+| Algoritmo de hash | Base utilizada | Entropia | Velocidad 1 entrada | 
+| ------------- | ------------- |  ------------- | ------------- | 
+| Algoritmo creado  | 94  |  Algoritmo creado  | 94  | 
+| SHA1  | 16 |  Algoritmo creado  | 94  | 
+| SHA256  | 16  |   Algoritmo creado  | 94  | 
+| MD5  | 16  |  Algoritmo creado  | 94  | 
 
 ### Ditribución de rendimiento
 
