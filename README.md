@@ -219,8 +219,7 @@ if(switch() == False):
 
 ## Comparativa de los hash
 
-
-| Algoritmo de hash | Base | Entropia | Velocidad: 1 entrada de texto |  Velocidad: 10 entrada de texto |  Velocidad: 20 entrada de texto |  Velocidad: 50 entrada de texto |
+| Primer encabezado | Segundo encabezado |
 | ------------- | ------------- |
 | Contenido de la celda  | Contenido de la celda  |
 | Contenido de la celda  | Contenido de la celda  |
