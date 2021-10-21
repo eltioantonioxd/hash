@@ -215,8 +215,9 @@ if(switch() == False):
     print('Ups, al parecer no ingreso un dígito')
 
 ```
-## Comparativa Hash Algorithm
+## Explicación del script
 
+## Comparativa de los hash
 
 ### Ditribución de rendimiento
 
