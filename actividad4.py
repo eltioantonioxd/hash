@@ -111,16 +111,20 @@ def F4(password):
     elif(password.isdigit()):
         return F3(password)
 
-def lectura(fichero):
+def lectura(fichero, prueba):
     try:
         with open(fichero, "r", encoding='utf8') as file:
             cont = 0
+            inicio = time.time()
             for line in file:
                 palabra = line.strip()
-                print("Contraseña:", palabra, "-------> Hash por defecto:",  hashR(resumen(palabra), palabra))
+                print("Contraseña:", palabra, "-------> Hash por defecto:",  hashlib.md5(str(palabra).encode('utf-8')).hexdigest())
                 cont += 1
-                if(cont == 50):
-                    return file.close()
+                if(cont == prueba):
+                    fin = time.time()
+                    delta = fin-inicio
+                    file.close()
+                    return print('Velocidad de la operación:', delta)
     except:
         return print('Algo salio mal :(. Corrobora que la ubicación, nombre y extensión del fichero esten correctos')
 
@@ -143,7 +147,24 @@ def switch():
             
             if(opcion == 1):
                 fichero = input("ingrese la ubicación, nombre y extensión del fichero: ")
-                lectura(fichero)
+                try:
+                    print('¿Cuántas pruebas desea realizar?')
+                    print('1.- 1 entrada de texto.')
+                    print('2.- 10 entradas de texto.')
+                    print('3.- 20 entradas de texto.')
+                    print('4.- 50 entradas de texto.')
+                    prueba = int(input(""))
+                except:
+                    print('Entrada incorrecta')
+                if(prueba==1):
+                    prueba = 1
+                elif(prueba==2):
+                    prueba = 10
+                elif(prueba==3):
+                    prueba = 20
+                elif(prueba==4):
+                    prueba = 50
+                lectura(fichero, prueba)
                 seguir = False
 
             elif(opcion ==2):
@@ -176,7 +197,7 @@ def switch():
                 print('Sha256: ', hash_object.hexdigest(), "     Entropía:", entropia(hash_object.hexdigest(), 16))
                 fin = time.time()
                 delta = fin-inicio
-                print("Velocidad hash", delta)
+                print(delta)
                 seguir = False
 
             elif(opcion == 5):
@@ -187,7 +208,7 @@ def switch():
                 print('MD5: ', hash_object.hexdigest(), "     Entropía:", entropia(hash_object.hexdigest(), 16))
                 fin = time.time()
                 delta = fin-inicio
-                print("Velocidad hash", delta)
+                print(fin-inicio)
                 seguir = False
             else:
                 print('Favor escoga una opción válida')
