@@ -233,7 +233,7 @@ ej: crip => F2(crip) = haockeng
 ej: crip => F3(crip) = 320.
 
 <p align="center">
-  <img max-width:100%; src="https://user-images.githubusercontent.com/91589175/138577730-b553a784-b932-48a8-9e9d-4bbf86359c47.png">
+  <img max-width:100%; src="https://user-images.githubusercontent.com/91589175/138577769-23944b3c-006f-4382-b2dd-31949a2be949.png">
 </p>
 
 - Función N°4: Esta función permite diferenciar entre minusculas, máyusculas y acentos para que el hash final varie. Se crea una base auxiliar (base2) que permita hacer uso de caractere especiales.
