@@ -217,9 +217,11 @@ if(switch() == False):
 ```
 ## Explicación del script
 El hash funciona a partir de 5 funciones que operan de la siguiente forma:
-- Función N°1: Suma el primer y el último caracter de la palabra. ej: Hola => F1(Hola) = Ha
+- Función N°1: Suma el primer y el último caracter de la palabra. ej: crip => F1(crip) = cp
+
+![image](https://user-images.githubusercontent.com/91589175/138577394-dc13d025-7db2-48e2-bc94-6ac60408ee14.png)
 - Función N°2: Verifica si el caracter i de la contraseña se encuentra en el diccionario, si es así se crea una variable auxiliar (reemplazar) que divide por 2 la posición donde se hizo match con el diccionario y se realiza un corrimiento de 6. Finalmente la variable Match se concatena con la posición de la base[reemplazar] + base[i* 2]. 
-ej: abcd => F2(abcd) = gagchehf
+ej: abcd => F2(crip) = haockeng
 ![image](https://user-images.githubusercontent.com/91589175/138577347-fd9b4575-5778-4b10-9b57-4add2ffaf6c9.png)
 
 - Función N°3: Realiza una sumatoria par e impar de la posición de los caracteres de la password encontradas en el diccionario, posteriormente suma ambos valores.
