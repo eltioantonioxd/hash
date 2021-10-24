@@ -230,7 +230,12 @@ ej: crip => F2(crip) = haockeng
 </p>
 
 - Función N°3: Realiza una sumatoria par e impar de la posición de los caracteres de la password encontradas en el diccionario, posteriormente suma ambos valores.
-ej: crip => F3(crip) = 320
+ej: crip => F3(crip) = 320.
+
+<p align="center">
+  <img max-width:100%; src="https://user-images.githubusercontent.com/91589175/138577730-b553a784-b932-48a8-9e9d-4bbf86359c47.png">
+</p>
+
 - Función N°4: Esta función permite diferenciar entre minusculas, máyusculas y acentos para que el hash final varie. Se crea una base auxiliar (base2) que permita hacer uso de caractere especiales.
 - Función N°5: Obtiene la raiz de la función F3. ej: crip => F5(crip) = raiz(320) = 17.888 => 17 (sólo se considera la parte entera).
 
