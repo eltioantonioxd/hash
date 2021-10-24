@@ -221,12 +221,14 @@ El hash funciona a partir de 5 funciones que operan de la siguiente forma:
 <p align="center">
   <img max-width:100%; src="https://user-images.githubusercontent.com/91589175/138577394-dc13d025-7db2-48e2-bc94-6ac60408ee14.png">
 </p>
+
 - Función N°2: Verifica si el caracter i de la contraseña se encuentra en el diccionario, si es así se crea una variable auxiliar (reemplazar) que divide por 2 la posición donde se hizo match con el diccionario y se realiza un corrimiento de 6. Finalmente la variable Match se concatena con la posición de la base[reemplazar] + base[i* 2]. 
 ej: crip => F2(crip) = haockeng
 
 <p align="center">
   <img max-width:100%; src="https://user-images.githubusercontent.com/91589175/138577347-fd9b4575-5778-4b10-9b57-4add2ffaf6c9.png">
 </p>
+
 - Función N°3: Realiza una sumatoria par e impar de la posición de los caracteres de la password encontradas en el diccionario, posteriormente suma ambos valores.
 ej: crip => F3(crip) = 320
 - Función N°4: Esta función permite diferenciar entre minusculas, máyusculas y acentos para que el hash final varie. Se crea una base auxiliar (base2) que permita hacer uso de caractere especiales.
