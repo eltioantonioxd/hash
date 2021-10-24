@@ -250,6 +250,10 @@ ej: crip => F3(crip) = 320.
 
 - Función resumen: está función suma las funciones anteriormente mencionadas de la siguiente forma: F2 + F3 + F4 + F1 + F5 y retorna dicha suma asociada al hash. Por último, está se corroborá en la función **hashR** que verifica si el hash obtenido es mayor o menor a 25 caracteres.
 
+<p align="center">
+  <img max-width:100%; src="https://user-images.githubusercontent.com/91589175/138578816-30a4882a-1317-43ba-8c9f-92a7f8dbad94.png">
+</p>
+
 ## Comparativa de los hash
 
 | Algoritmo de hash | Base utilizada | Entropia | Velocidad 1 entrada | Velocidad 10 entradas | Velocidad 20 entradas | Velocidad 50 entradas |
