@@ -237,6 +237,11 @@ ej: crip => F3(crip) = 320.
 </p>
 
 - Función N°4: Esta función permite diferenciar entre minusculas, máyusculas y acentos para que el hash final varie. Se crea una base auxiliar (base2) que permita hacer uso de caractere especiales.
+
+<p align="center">
+  <img max-width:100%; src="https://user-images.githubusercontent.com/91589175/138578423-329a4c53-796c-4856-98c5-afe32a2a7a45.png">
+</p>
+
 - Función N°5: Obtiene la raiz de la función F3. ej: crip => F5(crip) = raiz(320) = 17.888 => 17 (sólo se considera la parte entera).
 
 <p align="center">
